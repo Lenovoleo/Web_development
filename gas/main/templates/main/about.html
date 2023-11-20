@@ -1,0 +1,67 @@
+{% extends 'main/shablon.html' %}
+{% load static %}
+
+{% block linkcss  %}
+<link rel="stylesheet" href="{% static 'main/css/about.css' %}" />
+{% endblock  %}
+
+{% block title %}
+About
+{% endblock %}
+
+{% block main %}
+<main class="main">
+      <div class="main__start">
+        <div class="row container">
+          <div class="col text-center container">
+            <p class="fs-2 fw-semibold mb-4 main__start__title">Начало пути</p>
+            <p>
+              ОЮЛ «Ассоциация газовых хозяйств Алматинской области» была
+              учреждена в январе 2013 года с целью объединения различных
+              компаний, занимающихся деятельностью в сфере газа и газоснабжения
+              в Алматинской области. Под руководством председателя Ассоциации,
+              Нурбаева Молдияра Кылчиковича, она объединяет в своих рядах
+              несколько организаций, таких как ТОО «Тауекел-Т», ТОО
+              «Тауекел-Н-Алғабас», ТОО «Таусамалгазмонтаж», и другие.
+            </p>
+          </div>
+          <div class="row container">
+            <div class="col container text-center">
+              <p class="fs-2 fw-semibold mb-4 main__start__title">Наша цель</p>
+              <p>
+                Объединение усилий всех членов для решения вопросов в газовой
+                отрасли, в том числе обеспечение условий для продуктивного
+                диалога и взаимодействия участников Ассоциации с потребителями
+                услуг, путем своевременного, всестороннего, объективного
+                рассмотрение поступающих вопросов
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__end">
+        <div class="row container">
+          <div class="col container">
+            <p class="text-center fs-2 fw-semibold main__end__title">
+              Организации занимаются
+            </p>
+            <div class="row">
+              <div class="col">
+                <ul class="fs-5">
+                  <li>
+                    1) Техническое обслуживание газопотребляющих систем и
+                    газового оборудования
+                  </li>
+                  <li>2) Коммунально-бытовых и бытовых потребителей</li>
+                  <li>3) Разработку проектно-сметной документации</li>
+                  <li>4) Строительно-монтажные работы</li>
+                  <li>5) Розничную реализацию товарного газа</li>
+                </ul>
+              </div>
+              <div class="col"><img src={% static 'main/img/about/gas.jpeg' %} alt="" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+{% endblock %}

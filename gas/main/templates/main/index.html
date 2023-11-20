@@ -1,0 +1,137 @@
+{% extends 'main/shablon.html' %}
+{% load static %}
+{% block title %}
+Home
+{% endblock %}
+{% block linkcss %}
+<link rel="stylesheet" href="{% static 'main/css/style.css' %}" />
+{% endblock %}
+{% block main %}
+<main class="main">
+      <div class="main__intro">
+        <div class="row">
+          <div class="col container-fluid">
+            <p>АССОСИАЦИЯ ГАЗОВЫХ ХОЗЯЙСТВ</p>
+          </div>
+        </div>
+      </div>
+      <div class="main__continue">
+        <div class="row">
+          <div class="col">
+            <div class="main__continue__text">
+              <p>Рады видеть вас здесь!</p>
+            </div>
+            <div class="main__continue__slider container">
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active bg-black"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    class="bg-black"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    class="bg-black"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col">
+                        <p class="carousel-inner__title">Новости</p>
+                        <p>
+                          Свежие новости: узнайте о последних событиях и
+                          событиях из первых уст. Читайте подробности, анализ и
+                          комментарии к актуальным событиям в мире, политике,
+                          экономике, науке и многом другом. Переходите к
+                          новостям и оставайтесь в курсе происходящего!
+                        </p>
+                        <a href="#">Перейти</a>
+                      </div>
+                      <div class="col d-flex justify-content-end">
+                        <img src="{% static 'main/img/home/slide1.png' %}" alt="slide" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col">
+                        <p class="carousel-inner__title">Информация</p>
+                        <p>
+                          Здесь вы найдете полезные сведения о нашем проекте.
+                          Узнайте больше о нашей команде, нашей миссии и
+                          ценностях. Мы гордимся тем, что делаем, и хотим
+                          поделиться этим с вами. Если у вас есть какие-либо
+                          вопросы или пожелания, не стесняйтесь связаться с
+                          нами. Спасибо за вашу поддержку и интерес к нашей
+                          деятельности!
+                        </p>
+                        <a href="#">Перейти</a>
+                      </div>
+                      <div class="col d-flex justify-content-end">
+                        <img src="{% static 'main/img/home/slide2.jpg' %}" alt="slide" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col">
+                        <p class="carousel-inner__title">Личный блог</p>
+                        <p>
+                          Добро пожаловать в мой мир! Здесь я делюсь своими
+                          мыслями, историями и вдохновением. Откройте для себя
+                          новое, обсудите темы, которые мне близки, и поделитесь
+                          своими взглядами. Давайте исследовать этот
+                          увлекательный путь вместе!
+                        </p>
+                        <a href="#">Перейти</a>
+                      </div>
+                      <div class="col d-flex justify-content-end">
+                        <img src="{% static 'main/img/home/slide3.jpg' %}" alt="slide" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__end">
+        <div class="row container">
+          <div class="col">
+            <p class="main__end__title">О нас</p>
+            <p>
+              Привет, друзья! Мы — ОЮЛ «Ассоциация газовых хозяйств». Наша
+              миссия - обеспечить качественное газоснабжение и поделиться с вами
+              полезной информацией о газе.
+            </p>
+            <p>
+              Здесь вы найдете ответы на ваши вопросы, а также возможность
+              обсудить спорные моменты, прежде чем обращаться в официальные
+              органы. Мы ценим ваше мнение и гарантируем объективное
+              рассмотрение всех обращений.
+            </p>
+            <p>
+              Мы верим в конструктивный диалог и надеемся, что наш блог станет
+              вашим источником информации и общения. Присоединяйтесь к нам, и
+              вместе мы сделаем мир газоснабжения ярче и понятнее!
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+{% endblock %}
